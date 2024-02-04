@@ -190,3 +190,38 @@ body {
     font-weight: bold;
     font-size: 60px;
 }
+
+/* RESTART */
+.restart-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 60%;
+}
+.restart-choice {
+    /* Button Design */
+    background-color: rgba(216, 208, 155, 0.98);
+    border: 10px;
+    border-radius: 3px;
+    padding: 10px 40px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px rgb(107, 52, 52);
+    width: 300px;
+
+    /* Font design */
+    color: rgb(107, 52, 52);
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+
+    cursor: pointer;
+    transition-duration: 0.1s;
+}
+.restart-choice:active {
+    background-color: rgba(247, 236, 195, 0.98);
+    box-shadow: 0 2.5px rgb(107, 52, 52);
+    transform: translateY(1.5px);
+}

@@ -165,3 +165,31 @@ previousButton.addEventListener("click", function(evt) {
     }
 })
 
+// Restart the quiz 
+function restartQuiz() {
+    // Set the score and currentQuestion back to 0 and reset answer_chosen
+    currentQuestion = 0
+    correctAnswer = 0
+    for (var i = 0; i < 5; i++) {
+        qaList[i].answer_chosen = ""
+    }
+    updateQuestion()
+
+    // Hide the result display and display the question prompt
+    let questionContainer = document.querySelector('.question');
+    questionContainer.classList.remove('question-hidden');
+
+    let resultContainer = document.querySelector('.result');
+    resultContainer.classList.add('result-hidden');
+    resultContainer.classList.remove('result');
+
+    // Removing the highlight of the correct and incorrect answer
+    for (var i = 0; i < 5; i++) {
+        let resultButtonsElement = document.querySelectorAll('.result-buttons')[i];
+        let children = resultButtonsElement.children;
+        for (var j = 0; j < children.length; j++) {
+            children[j].classList.remove('result-choice-correct')
+            children[j].classList.remove('result-choice-incorrect')
+        }
+    }
+}
