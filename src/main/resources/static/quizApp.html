@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz</title>
+    <link rel="stylesheet" href="CSS/quizApp.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Vietnam Quiz</h1>
+    </header>
+    <main>
+        <section class="question">
+            <section class="question-description">
+                <h3 class="question-number" id="question-number">Question 1</h3>
+                <p class="question-prompt" id="question-prompt">What is Vietnam's iconic dish?</p>
+            </section>
+            <section class="answer-buttons">
+                <button class="answer-choice" id="answer-choice1">Pho</button>
+                <button class="answer-choice" id="answer-choice2">Ramen</button>
+                <button class="answer-choice" id="answer-choice3">Tom Yum Soup</button>
+                <button class="answer-choice" id="answer-choice4">Pasta</button>
+            </section>
+            <section class="navigation">
+                <button class="previous-button-disable">Previous</button>
+                <button class="next-button-disable">Next</button>
+            </section>
+        </section>
+
+        <section class="result-hidden">
+            <section class="score-description">
+                <h3 class="score-display"><span id="user-score">0</span> out of 5</h3>
+            </section>
+            <section class="question-description">
+                <h3 class="question-number">Question 1</h3>
+                <p class="question-prompt">What is Vietnam's iconic dish?</p>
+            </section>
+            <section class="result-buttons">
+                <button class="result-choice">Pho</button>
+                <button class="result-choice">Ramen</button>
+                <button class="result-choice">Tom Yum Soup</button>
+                <button class="result-choice">Pasta</button>
+            </section>
+
+            <section class="question-description">
+                <h3 class="question-number">Question 2</h3>
+                <p class="question-prompt">What is the capital city of Vietnam?</p>
+            </section>
+            <section class="result-buttons">
+                <button class="result-choice">Ho Chi Minh City</button>
+                <button class="result-choice">Hanoi</button>
+                <button class="result-choice">Hue</button>
+                <button class="result-choice">Phu Quoc</button>
+            </section>
+
+            <section class="question-description">
+                <h3 class="question-number">Question 3</h3>
+                <p class="question-prompt">What is the two colours of the Vietnamese flag?</p>
+            </section>
+            <section class="result-buttons">
+                <button class="result-choice">Red and Blue</button>
+                <button class="result-choice">Blue and White</button>
+                <button class="result-choice">Red and Black</button>
+                <button class="result-choice">Red and Yellow</button>
+            </section>
+
+            <section class="question-description">
+                <h3 class="question-number">Question 4</h3>
+                <p class="question-prompt">How many provinces are there in Vietnam?</p>
+            </section>
+            <section class="result-buttons">
+                <button class="result-choice">50</button>
+                <button class="result-choice">48</button>
+                <button class="result-choice">15</button>
+                <button class="result-choice">58</button>
+            </section>
+
+            <section class="question-description">
+                <h3 class="question-number">Question 5</h3>
+                <p class="question-prompt">What is the most populated city in Vietnam?</p>
+            </section>
+            <section class="result-buttons">
+                <button class="result-choice">Ho Chi Minh City</button>
+                <button class="result-choice">Can Tho</button>
+                <button class="result-choice">Hanoi</button>
+                <button class="result-choice">Hai Phong</button>
+            </section>
+        </section>
+    </main>
+    <script src="JS/script.js"></script>
+</body>
+</html>
